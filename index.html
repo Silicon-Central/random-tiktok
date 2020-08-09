@@ -1,0 +1,229 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Random TikTok Generator Find Random TikToks and who shared them!" name=description>
+    <meta content="TikTok Generator, TikTok, Random TikTok, Random TikTok Generator" name=keywords>
+    <meta content=website property=og:type>
+    <meta content="TikTok Generator, TikTok, Random TikTok, Random TikTok Generator" property=og:description>
+    <meta content=website name=twitter:card>
+    <meta content=@sethusenthilll name=twitter:site>
+    <meta content="TikTok Generator, TikTok, Random TikTok, Random TikTok Generator" name=twitter:description>
+
+
+    <title>Random TikTok Generator</title>
+</head>
+<body>
+    <center>
+        <h1>Random TikTok Generator</h1>
+        <p onclick="window.open('https://sethusenthil.com')">By: Sethu Senthil</p>
+        <p>Find Random TikToks and who shared them!</p>
+
+        <div class="loading">
+            <div id="loading">
+                Generating TikTok...
+            </div>
+
+            <div id="btn" class="mdc-card demo-card card">
+                <img src="" id="img"  style="margin-bottom: 10; border-radius: 10px; height: 50%; width: 100%;" onclick="analytic('click on TikTok');window.open('')"/>
+
+        <div class="mdc-card-wrapper__text-section" onclick="window.open()"><!---->
+        <div class="demo-card__title" id="by">${data.title}</div>
+        <div class="demo-card__subhead" id="caption">${data.series}</div>
+      <!----></div>
+
+        <div class="mdc-card__actions">
+            <button onclick="openTikTok();" class="mdc-button mdc-card__action mdc-card__action--button mdc-ripple-upgraded">
+                Open TikTok
+              </button>
+
+              <button onclick="copyURL();" class="mdc-button mdc-card__action mdc-card__action--button mdc-ripple-upgraded">
+                Copy URL
+              </button>
+
+    </div>
+
+            </div>
+        </div>
+        <a href="" id="sidurl">Shared by: <span id="sid"> loading... </span></a>
+
+        <br/>
+
+       <p>Install the SaveTok iPhone app to download tiktoks without the watermark and much more!</p>
+
+       <button onclick="window.open('https://apple.co/3krc9wp');" class="mdc-button mdc-card__action mdc-card__action--button mdc-ripple-upgraded">
+        Get SaveTok
+      </button>
+      </center>
+</body>
+<style>
+
+body{
+  margin: 15px;
+}
+
+.mdc-card__actions{
+  justify-content: center;
+}
+
+.mdc-button{font-family:Roboto, sans-serif;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;font-size:.875rem;line-height:2.25rem;font-weight:500;letter-spacing:.0892857143em;text-decoration:none;text-transform:uppercase;padding:0 8px 0 8px;display:inline-flex;position:relative;align-items:center;justify-content:center;box-sizing:border-box;min-width:64px;border:none;outline:none;line-height:inherit;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-appearance:none;overflow:visible;vertical-align:middle;border-radius:4px;}
+.mdc-button::-moz-focus-inner{padding:0;border:0;}
+.mdc-button:active{outline:none;}
+.mdc-button:hover{cursor:pointer;}
+.mdc-button:disabled{background-color:transparent;color:rgba(0,0,0,.37);cursor:default;pointer-events:none;}
+.mdc-button .mdc-button__ripple{border-radius:4px;}
+.mdc-button{--mdc-ripple-fg-size:0;--mdc-ripple-left:0;--mdc-ripple-top:0;--mdc-ripple-fg-scale:1;--mdc-ripple-fg-translate-end:0;--mdc-ripple-fg-translate-start:0;-webkit-tap-highlight-color:rgba(0,0,0,0);will-change:transform,opacity;}
+.mdc-button .mdc-button__ripple::before,.mdc-button .mdc-button__ripple::after{position:absolute;border-radius:50%;opacity:0;pointer-events:none;content:"";}
+.mdc-button .mdc-button__ripple::before{transition:opacity 15ms linear,background-color 15ms linear;z-index:1;}
+.mdc-button.mdc-ripple-upgraded .mdc-button__ripple::before{transform:scale(var(--mdc-ripple-fg-scale, 1));}
+.mdc-button.mdc-ripple-upgraded .mdc-button__ripple::after{top:0;left:0;transform:scale(0);transform-origin:center center;}
+.mdc-button .mdc-button__ripple::before,.mdc-button .mdc-button__ripple::after{top:calc(50% - 100%);left:calc(50% - 100%);width:200%;height:200%;}
+.mdc-button.mdc-ripple-upgraded .mdc-button__ripple::after{width:var(--mdc-ripple-fg-size, 100%);height:var(--mdc-ripple-fg-size, 100%);}
+.mdc-button .mdc-button__ripple::before,.mdc-button .mdc-button__ripple::after{background-color:#6200ee;}
+.mdc-button .mdc-button__ripple::before,.mdc-button .mdc-button__ripple::after{background-color:var(--mdc-theme-primary, #6200ee);}
+.mdc-button:hover .mdc-button__ripple::before{opacity:.04;}
+.mdc-button.mdc-ripple-upgraded{--mdc-ripple-fg-opacity:0.12;}
+.mdc-button .mdc-button__ripple{position:absolute;width:100%;height:100%;overflow:hidden;}
+.mdc-button:not(.mdc-button--outlined) .mdc-button__ripple{top:0;left:0;}
+.mdc-button{height:36px;}
+.mdc-button__ripple{box-sizing:content-box;}
+
+    body{
+        font-family: "PingFang SC";
+        background: white;
+        color: black;
+    }
+
+.loading{
+  margin-top: 15px;
+}
+
+#btn{
+    display: none;
+}
+
+.mdc-card{border-radius:4px;background:#fff;background:var(--mdc-theme-surface, #fff);box-shadow:0px 2px 1px -1px rgba(0, 0, 0, 0.2),0px 1px 1px 0px rgba(0, 0, 0, 0.14),0px 1px 3px 0px rgba(0,0,0,.12);display:flex;flex-direction:column;box-sizing:border-box;}
+.mdc-card__media{position:relative;box-sizing:border-box;background-repeat:no-repeat;background-position:center;background-size:cover;}
+.mdc-card__media::before{display:block;content:"";}
+.mdc-card__media:first-child{border-top-left-radius:inherit;border-top-right-radius:inherit;}
+.mdc-card__media--16-9::before{margin-top:56.25%;}
+.mdc-card__actions{display:flex;flex-direction:row;align-items:center;box-sizing:border-box;min-height:52px;padding:8px;}
+.mdc-card__action{display:inline-flex;flex-direction:row;align-items:center;box-sizing:border-box;justify-content:center;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;}
+.mdc-card__action:focus{outline:none;}
+.mdc-card__action--button{margin-left:0;margin-right:8px;padding:0 8px;}
+.mdc-card__action--button:last-child{margin-left:0;margin-right:0;}
+.mdc-card-wrapper__text-section{padding-left:16px;padding-right:16px;}
+.mdc-card__media+.mdc-card-wrapper__text-section{padding-top:16px;}
+*,*::before,*::after{box-sizing:border-box;}
+.demo-card{width:250;}
+.demo-card__title{font-family:Roboto, sans-serif;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;font-size:1.25rem;line-height:2rem;font-weight:500;letter-spacing:.0125em;text-decoration:inherit;text-transform:inherit;}
+.demo-card__subhead{font-family:Roboto, sans-serif;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;font-size:.875rem;line-height:1.25rem;font-weight:400;letter-spacing:.0178571429em;text-decoration:inherit;text-transform:inherit;opacity:.6;}
+/*! CSS Used fontfaces */
+@font-face{font-family:'Roboto';font-style:normal;font-weight:300;src:local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fCRc4AMP6lbBP.woff2) format('woff2');unicode-range:U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:300;src:local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fABc4AMP6lbBP.woff2) format('woff2');unicode-range:U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:300;src:local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fCBc4AMP6lbBP.woff2) format('woff2');unicode-range:U+1F00-1FFF;}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:300;src:local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fBxc4AMP6lbBP.woff2) format('woff2');unicode-range:U+0370-03FF;}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:300;src:local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fCxc4AMP6lbBP.woff2) format('woff2');unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:300;src:local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fChc4AMP6lbBP.woff2) format('woff2');unicode-range:U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:300;src:local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fBBc4AMP6lQ.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:400;src:local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu72xKKTU1Kvnz.woff2) format('woff2');unicode-range:U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:400;src:local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu5mxKKTU1Kvnz.woff2) format('woff2');unicode-range:U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:400;src:local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu7mxKKTU1Kvnz.woff2) format('woff2');unicode-range:U+1F00-1FFF;}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:400;src:local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4WxKKTU1Kvnz.woff2) format('woff2');unicode-range:U+0370-03FF;}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:400;src:local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu7WxKKTU1Kvnz.woff2) format('woff2');unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:400;src:local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu7GxKKTU1Kvnz.woff2) format('woff2');unicode-range:U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:400;src:local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxKKTU1Kg.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:500;src:local('Roboto Medium'), local('Roboto-Medium'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmEU9fCRc4AMP6lbBP.woff2) format('woff2');unicode-range:U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:500;src:local('Roboto Medium'), local('Roboto-Medium'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmEU9fABc4AMP6lbBP.woff2) format('woff2');unicode-range:U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:500;src:local('Roboto Medium'), local('Roboto-Medium'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmEU9fCBc4AMP6lbBP.woff2) format('woff2');unicode-range:U+1F00-1FFF;}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:500;src:local('Roboto Medium'), local('Roboto-Medium'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmEU9fBxc4AMP6lbBP.woff2) format('woff2');unicode-range:U+0370-03FF;}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:500;src:local('Roboto Medium'), local('Roboto-Medium'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmEU9fCxc4AMP6lbBP.woff2) format('woff2');unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:500;src:local('Roboto Medium'), local('Roboto-Medium'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmEU9fChc4AMP6lbBP.woff2) format('woff2');unicode-range:U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:500;src:local('Roboto Medium'), local('Roboto-Medium'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmEU9fBBc4AMP6lQ.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+
+
+@media (prefers-color-scheme: dark) {
+
+body{
+    background: #121212;
+    color: white;
+}
+
+a{
+        color: white;
+    }
+
+    .mdc-button{
+  background: #f82e55;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.mdc-card{
+background: #252525;
+margin-bottom: 10px;
+}
+
+}
+</style>
+
+<script>
+
+    let tiktokURL = '';
+
+    fetch('https://savetok-default.sethusenthil.com/seed')
+  .then(response => response.json())
+  .then(data => {
+    tiktokURL = "https://vm.tiktok.com/" + data.seed;
+    document.querySelector('#btn').style.display = 'block'
+    document.querySelector('#loading').style.display = 'none'
+    document.querySelector('#sid').innerText = '@' + data.sid
+    document.querySelector('#sidurl').href = 'https://www.tiktok.com/@' + data.sid
+
+
+
+    fetch('https://www.tiktok.com/oembed?url=' + tiktokURL)
+    .then(response2 => response2.json())
+    .then(tiktok => {
+     document.querySelector('#img').src = tiktok.thumbnail_url
+     document.querySelector('#by').innerText = '@' + tiktok.author_name
+     document.querySelector('#caption').innerText = tiktok.title
+    })
+  });
+
+  function openTikTok() {
+      window.open(tiktokURL);
+  }
+
+  function copyURL() {
+      copyToClipboard(tiktokURL)
+      alert('copied to clipboard')
+  }
+
+
+  function copyToClipboard(text) {
+    if (window.clipboardData && window.clipboardData.setData) {
+        // Internet Explorer-specific code path to prevent textarea being shown while dialog is visible.
+        return clipboardData.setData("Text", text);
+
+    }
+    else if (document.queryCommandSupported && document.queryCommandSupported("copy")) {
+        var textarea = document.createElement("textarea");
+        textarea.textContent = text;
+        textarea.style.position = "fixed";  // Prevent scrolling to bottom of page in Microsoft Edge.
+        document.body.appendChild(textarea);
+        textarea.select();
+        try {
+            return document.execCommand("copy");  // Security exception may be thrown by some browsers.
+        }
+        catch (ex) {
+            console.warn("Copy to clipboard failed.", ex);
+            return false;
+        }
+        finally {
+            document.body.removeChild(textarea);
+        }
+    }
+}
+</script>
+</html>
